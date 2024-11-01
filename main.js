@@ -74,7 +74,6 @@ spheres.rotation.x = 0.1;
 spheres.position.y = -0.8;
 scene.add(spheres);
 
-// const controls = new OrbitControls(camera, renderer.domElement);
 
 camera.position.z = 9;
 
@@ -85,11 +84,7 @@ window.addEventListener('wheel', (event) => {
     throttleTimeout = setTimeout(() => {
     throttleTimeout = null;
   }, 2000);
-  // if (event.deltaY > 0) {
-    //   console.log('Wheel scrolled down');
-    // } else {
-      //   console.log('Wheel scrolled up');
-      // }
+  
   const direction = event.deltaY > 0 ? 'down' : 'up';
 
   scrollCount = (scrollCount + 1) % 4;
@@ -120,7 +115,6 @@ window.addEventListener('wheel', (event) => {
 const clock = new THREE.Clock();
 function animate() {
   requestAnimationFrame(animate);
-  // controls.update();
   renderer.render(scene, camera);
   // Rotate all spheres on their axis
   for(let i = 0; i < allSpheres.length; i++) {
