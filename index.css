@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'bellina';
+    src: url(./Bellina.woff2);
+}
+@font-face {
+    font-family: 'bellina2';
+    src: url(./BellinaFlorence.woff2);
+}
+@font-face {
+    font-family: 'megatrans';
+    src: url(./MegatransdemoRegular-8M9B0.woff2);
+}
+@font-face {
+    font-family: 'neon';
+    src: url(./NeonFuture20Demo-L3jp3.woff2);
+}
+@font-face {
+    font-family: 'supreme';
+    src: url(./SupremeSpike-KVO8D.woff2);
+}
+
+* {
+    background-color: #000;
+}
