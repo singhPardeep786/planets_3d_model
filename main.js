@@ -1,9 +1,6 @@
 import './style.css';
-
 import * as THREE from 'three';
 import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
-
-
 import gsap from 'gsap';
 
 const scene = new THREE.Scene();
